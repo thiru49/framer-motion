@@ -6,3 +6,10 @@
  import image5 from '../assets/foods/sam-moghadam-khamseh-LUv656869_A-unsplash.jpg';
 
  export const slideImage = [image1,image2,image3,image4]
+
+ export const initialNotifications = [
+     "User #20 left you a like!",
+     "User #45 sent you a friend request",
+     "Your song has been uploaded!",
+     "Thanks for signing up!",
+];
