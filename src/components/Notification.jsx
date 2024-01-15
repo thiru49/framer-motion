@@ -12,13 +12,13 @@ const Notification = () => {
           setNotifyContent(notifyContent.filter(item => item !== content))
      }
   return (
-    <div className='mt-3 min-h-80 text-[#111827] px-4'>
+    <div className='relative mt-3 h-[100px] sm:min-h-80 text-[#111827] z-20 px-4'>
         <header className='h-[4rem]  bg-lime-200 text-xs bottom-1 border-solid border-[#e5e7eb] flex items-center px-8 relative'>
-           <div className='w-[50%] text-xl '>
+           <div className='w-[50%] sm:text-xl '>
            Animating a bell icon
            </div>
            <ul className='w-[50%] flex justify-end items-center relative gap-4'>
-               <li className='h-[2rem] w-[2rem] cursor-pointer' onClick={()=>(setShowNotify(!shownotify))}>
+               <li className='h-[1.5rem] w-[1.5rem] sm:h-[2rem] am:w-[2rem] cursor-pointer' onClick={()=>(setShowNotify(!shownotify))}>
                <motion.svg whileHover={{ rotateZ:[0,-20,20,-20,20,-20,20,0],transition:{duration:0.5}}
                }
             xmlns="http://www.w3.org/2000/svg"

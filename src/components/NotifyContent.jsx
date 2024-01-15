@@ -18,7 +18,7 @@ const variants = {
 
 const NotifyContent = ({notifyContent,handleDeleteNotification}) => {
   return (
-    <motion.div variants={variants} initial="initial" animate='animate' className='absolute w-[24rem] top-[4.5rem] right-2 bg-yellow-100 text-sm leading-5 rounded-md'>
+    <motion.div variants={variants} initial="initial" animate='animate' className='absolute w-[24rem] top-[4.5rem] right-2 bg-yellow-100 text-sm leading-5 rounded-md z-30'>
      <ul className='list-none m-0 p-0'>
           <AnimatePresence>
           {notifyContent.map((content,index)=>(
